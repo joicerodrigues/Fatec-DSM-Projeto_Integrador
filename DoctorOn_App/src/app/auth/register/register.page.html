@@ -4,24 +4,27 @@
 <ion-content>
   <!-- LOGO -->
   <div class="logo">
-    <ion-img src="https://ik.imagekit.io/mnbr5uwksus/DoctorOn/DoctorOn.png?updatedAt=1634255509856"></ion-img>
+    <img src="../../assets/logo-nova-fonte.png">
+    <!--<ion-img src="https://ik.imagekit.io/mnbr5uwksus/DoctorOn/DoctorOn.png?updatedAt=1634255509856"></ion-img>-->
   </div>
-  <h1 style="text-align: center;">Cadastrar</h1>
+  <!--<h1 style="text-align: center;">Cadastrar</h1>-->
 
 
   <!-- INPUTS -->
   <form [formGroup]='register' (submit)="doRegister()">
     <ion-item>
-      <ion-label position="stacked">Nome</ion-label>
-      <ion-input formControlName="name"></ion-input>
+      <ion-label position="stacked">
+      <div class="text">Nome</div>
+    </ion-label>
+      <ion-input formControlName="name"><div class="mask">Nome</div></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="stacked">E-mail</ion-label>
-      <ion-input type="email" formControlName="email"></ion-input>
+      <ion-label position="stacked"><div class="text">E-mail</div></ion-label>
+      <ion-input type="email" formControlName="email"><div class="mask">E-mail</div></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="stacked">Senha</ion-label>
-      <ion-input formControlName="password" type="password"></ion-input>
+      <ion-label position="stacked"><div class="text">Senha</div></ion-label>
+      <ion-input formControlName="password" type="password"><div class="mask">Senha</div></ion-input>
     </ion-item>
 
     <!-- BOTÕES -->

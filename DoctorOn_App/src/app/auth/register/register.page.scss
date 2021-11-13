@@ -33,7 +33,11 @@ ion-input {
 
 
 .logo {
-    height: 30%;
+    .logo {
+        height: 30%;
+        width: 100%;
+        align-items: center;
+    }
 }
 
 ion-button {
@@ -71,4 +75,14 @@ ion-item {
 .buttons .cadastrar {
     --ion-color-primary: #48742C;
     font-weight: bold;
+}
+
+.text{
+    font-size: 20px;
+}
+
+.mask{
+    padding: 16px 0px 12px 16px;
+    opacity: 0.4;
+    font-size: 15px;
 }
